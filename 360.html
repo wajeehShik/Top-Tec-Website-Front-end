@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+
+.bg-shape {
+    position: absolute;
+    border: 1.5px solid rgba(255, 255, 255, 0.4); /* خط أبيض شفاف */
+    border-radius: 50%;
+    pointer-events: none; /* لكي لا تعيق النقر على الزر */
+}
+
+.left-1 {
+       width: 280px;
+    height: 280px;
+    bottom: -260px;
+    left: -176px;
+}
+
+.left-2 {    width: 400px;
+    height: 400px;
+    bottom: -294px;
+    left: -190px;
+    border: 6px solid;
+    border-color: #FFD700;
+}
+/* --- الجهة اليمنى --- */
+.right-1 {
+width: 320px;
+    height: 320px;
+    top: -217px;
+    right: -229px;
+}
+
+.right-2 {
+ width: 450px;
+    height: 450px;
+    top: -268px;
+    right: -279px;
+    border: 6px solid;
+    border-color: #FFD700;
+}
+
+
+@media(max-width:700px){
+.left-2 {
+
+    bottom: -328px;
+        left: -276px;}
+.right-1{
+      top: -319px;
+}
+.right-2 {
+    top: -399px;
+           right: -335px;}
+
+    .img_test_curve {
+          right: 79px;
+    }
+}
+    </style>
+  <link rel="stylesheet" crossorigin href="/assets/input-Bs5h9TH9.css">
+</head>
+ <body dir="rtl" class="font-cairo antialiased text-gray-900 bg-white">
+<header class="sticky top-0 z-[100] bg-white border-b border-[rgba(196,197,213,1)]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <div class="flex-shrink-0 flex items-center">
+        <img src="img/logo.png" alt="" class="h-20">
+      </div>
+
+      <nav class="hidden lg:flex space-x-reverse space-x-10">
+        <a href="#" class="text-blue-600 font-bold">الرئيسية</a>
+        <a href="#" class="text-[rgba(0,0,0,1)] font-bold hover:text-blue-600 transition">المميزات</a>
+        <a href="#" class="text-[rgba(0,0,0,1)] font-bold hover:text-blue-600 transition">الخدمات</a>
+        <a href="#" class="text-[rgba(0,0,0,1)] font-bold hover:text-blue-600 transition">تواصل معنا</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#" class="hidden sm:block bg-el-bg text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">
+          اطلب خدمة
+        </a>
+        <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none">
+          <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden absolute top-20 inset-x-0 bg-white shadow-xl border-b border-gray-100 transition-all duration-300 ease-in-out">
+    <div class="px-4 pt-2 pb-6 space-y-1 bg-white">
+      <a href="#" class="block px-3 py-4 text-base font-medium text-blue-600 bg-blue-50 rounded-md">الرئيسية</a>
+      <a href="#" class="block px-3 py-4 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md border-b border-gray-50">المميزات</a>
+      <a href="#" class="block px-3 py-4 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md border-b border-gray-50">الخدمات</a>
+      <a href="#" class="block px-3 py-4 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md border-b border-gray-50">تواصل معنا</a>
+      
+      <div class="pt-4">
+        <a href="#" class="block w-full text-center bg-el-bg text-white px-5 py-3 rounded-lg font-medium">اطلب خدمة الآن</a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- hero -->
+<section class="relative bg-white py-20 px-6 overflow-hidden text-center font-sans " dir="rtl">
+  <div class="max-w-4xl mx-auto mb-16 pb-28">
+    <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">
+      الباقة التسويقية المتكاملة
+    </h1>
+    <p class="text-xl md:text-2xl text-[#525C86] font-medium mb-8">
+      360 درجة — من الفكرة إلى النتيجة — نحن معك في كل خطوة
+    </p>
+    <div class="bg-white border border-gray-100 rounded-2xl p-6 max-w-2xl mx-auto shadow-lg">
+      <p class="text-gray-600 leading-relaxed">
+        مشكلتك ليست في التسويق — مشكلتك أن كل جزء يعمل لوحده، لدينا 9 خدمات متخصصة فريق واحد، رؤية موحدة، نبني لك منظومة تعمل كآلة واحدة منسجمة.
+      </p>
+    </div>
+  </div>
+  <div class="relative flex justify-center items-center  h-[400px] w-full">
+   <img src="img/360.png" class="animate-wiggle">
+  </div>
+</section>
+<section class="bg-white py-16 px-6 lg:px-20 font-sans overflow-hidden" dir="rtl">
+  <!-- title -->
+  <div class="text-center mb-20">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 mb-4">مسار النمو الاستراتيجي</h2>
+    <p class="text-gray-500 text-lg">خارطة طريق مدروسة لتحويل علامتك التجارية إلى رائد سوق</p>
+  </div>
+  <div class="max-w-7xl mx-auto relative">
+    <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 transform -translate-x-1/2 bg-blue-600 opacity-10"></div>
+
+    <div class="space-y-32">
+      <!-- first -->
+      <div class="relative flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        
+        <div class="w-full lg:w-1/2  text-center lg:text-right">
+          <span class="text-yellow-500 font-bold text-sm mb-3 block">المرحلة الأولى</span>
+          <h3 class="text-2xl md:text-4xl font-bold text-slate-900 mb-6">المرحلة الأولى — الأساس الاستراتيجي</h3>
+          <p class="text-gray-600 mb-8 text-lg">نفهم سوقك قبل أن نتحرك. كل شيء يبدأ بتحليل حقيقي: من هو عميلك؟ أين تخسر الآن؟</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="border border-gray-100 rounded-2xl bg-white p-10">
+              <h4 class="font-bold text-slate-800 flex justify-between">
+                <span class="text-[rgba(6,51,160,1)]"> الخطط التسويقية |
+Marketing Strategy</span>
+<i class="fa-solid fa-wand-magic-sparkles 
+                lg:pt-3 text-[rgba(243,192,0,1)]"></i>
+             </h4>
+              <p class="text-sm text-gray-500 mt-3">نحدد لك بالضبط: من تبيع له، وكيف تبيع
+له ماذا تقول له، وأين تصل إليه —
+بأهداف قابلة للقياس ومؤشرات أداء
+واضحة.</p>
+            </div>
+           <div class="border border-gray-100 rounded-2xl bg-white p-10">
+              <h4 class="font-bold text-[rgba(6,51,160,1)] flex justify-between">التصميم الجرافيكي |
+Graphic Design   
+              
+              <i class="fa-solid fa-wand-magic-sparkles     lg:pt-3 text-[rgba(243,192,0,1)]"></i></h4>
+
+              <p class="text-sm text-gray-500 mt-3">هويتك البصرية أول ما يراه العميل وآخر
+ما ينساه — شعار، هوية كاملة، تصاميم
+حملات وإعلانات.</p>
+          
+            </div>
+          </div>
+        </div>
+      <div class="w-full lg:w-1/2">
+  <div class="relative rounded-[2rem] overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300 border border-gray-100">
+    <img src="img/360_1.png" alt="Strategy" class="w-full h-full object-cover aspect-video lg:aspect-auto">
+  </div>
+</div>
+
+      </div>
+<!-- second -->
+      <div class="relative flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+        <div class="w-full lg:w-1/2  ">
+          <span class="text-yellow-500 text-center lg:text-right font-bold text-sm mb-3 block">المرحلة الثانية</span>
+          <h3 class="text-2xl md:text-4xl  text-center lg:text-right font-bold text-slate-900 mb-6">المرحلة الثانية — الوجود الرقمي</h3>
+          <p class="text-gray-600 mb-8  text-center lg:text-right text-lg">نجعلك متواجداً في كل مكان يبحث فيه عميلك. موقعك، ظهورك في Google.</p>
+
+          <div class="p-4 bg-[rgba(243,243,244,1)] mt-5 border-r-2 border-blue-600 rounded-l-xl flex items-center gap-4">
+            <div class=" p-2 shadow-sm text-blue-600">
+               <i class="fa-solid fa-globe text-3xl"></i>
+            </div>
+            <div>
+              <h4 class="font-extrabold text-[rgba(1,53,154,1)]">مواقع الويب | Web Development
+
+              </h4>
+              <p class="text-sm text-gray-500">  موقعك هو موظفك الأول الذي يعمل 24/7 — سريع، متجاوب، وجاهز للبيع فوراً.</p>
+            </div>
+          </div>
+          
+          <div class="p-4 bg-[rgba(243,243,244,1)] mt-5 border-r-2 border-blue-600 rounded-l-xl flex items-center gap-4">
+            <div class=" p-2 shadow-sm text-blue-600">
+     <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+            </div>
+            <div>
+              <h4 class="font-extrabold text-[rgba(1,53,154,1)]">تحسين محركات البحث | SEO
+
+              </h4>
+              <p class="text-sm text-gray-500"> نجعلك تظهر أمام عميلك لحظة ما يبحث عنك — كل نقرة عضوية هي عميل محتمل.</p>
+            </div>
+          </div>
+          <div class="p-4 bg-[rgba(243,243,244,1)] mt-5 border-r-2 border-blue-600 rounded-l-xl flex items-center gap-4">
+            <div class=" p-2 shadow-sm text-blue-600">
+<svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 24V19.7C2.05 18.8333 1.3125 17.8208 0.7875 16.6625C0.2625 15.5042 0 14.2833 0 13C0 10.5 0.875 8.375 2.625 6.625C4.375 4.875 6.5 4 9 4C11.0833 4 12.9292 4.6125 14.5375 5.8375C16.1458 7.0625 17.1917 8.65833 17.675 10.625L18.975 15.75C19.0583 16.0667 19 16.3542 18.8 16.6125C18.6 16.8708 18.3333 17 18 17H16V20C16 20.55 15.8042 21.0208 15.4125 21.4125C15.0208 21.8042 14.55 22 14 22H12V24H10V20H14V15H16.7L15.75 11.125C15.3667 9.60833 14.55 8.375 13.3 7.425C12.05 6.475 10.6167 6 9 6C7.06667 6 5.41667 6.675 4.05 8.025C2.68333 9.375 2 11.0167 2 12.95C2 13.95 2.20417 14.9 2.6125 15.8C3.02083 16.7 3.6 17.5 4.35 18.2L5 18.8V24H3ZM8 17H10L10.15 15.75C10.2833 15.7 10.4042 15.6417 10.5125 15.575C10.6208 15.5083 10.7167 15.4333 10.8 15.35L11.95 15.85L12.95 14.15L11.95 13.4C11.9833 13.2667 12 13.1333 12 13C12 12.8667 11.9833 12.7333 11.95 12.6L12.95 11.85L11.95 10.15L10.8 10.65C10.7167 10.5667 10.6208 10.4917 10.5125 10.425C10.4042 10.3583 10.2833 10.3 10.15 10.25L10 9H8L7.85 10.25C7.71667 10.3 7.59583 10.3583 7.4875 10.425C7.37917 10.4917 7.28333 10.5667 7.2 10.65L6.05 10.15L5.05 11.85L6.05 12.6C6.01667 12.7333 6 12.8667 6 13C6 13.1333 6.01667 13.2667 6.05 13.4L5.05 14.15L6.05 15.85L7.2 15.35C7.28333 15.4333 7.37917 15.5083 7.4875 15.575C7.59583 15.6417 7.71667 15.7 7.85 15.75L8 17ZM9 14.5C8.58333 14.5 8.22917 14.3542 7.9375 14.0625C7.64583 13.7708 7.5 13.4167 7.5 13C7.5 12.5833 7.64583 12.2292 7.9375 11.9375C8.22917 11.6458 8.58333 11.5 9 11.5C9.41667 11.5 9.77083 11.6458 10.0625 11.9375C10.3542 12.2292 10.5 12.5833 10.5 13C10.5 13.4167 10.3542 13.7708 10.0625 14.0625C9.77083 14.3542 9.41667 14.5 9 14.5Z" fill="#01359A"/>
+</svg>
+
+            </div>
+            <div>
+              <h4 class="font-extrabold text-[rgba(1,53,154,1)]">تحسين البصمة الرقمية | GEO — AI Visibility
+
+              </h4>
+              <p class="text-sm text-gray-500"> الذكاء الاصطناعي بات يجيب عن أسئلة عملائك — نضمن أن اسمك هو الجواب في
+ChatGPT وGoogle SGE وPerplexity.</p>
+
+            </div>
+          </div>
+        </div>
+               <div class="w-full lg:w-1/2">
+          <div class="relative rounded-[2rem] overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+            <img src="img/360_2.png" alt="Digital Presence" class="w-full h-auto">
+          </div>
+        </div>
+      </div>
+ <!-- three -->
+      <div class="relative flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div class="w-full lg:w-1/2 text-center lg:text-right">
+          <span class="text-yellow-500 font-bold text-sm mb-3 block">المرحلة الثالثة</span>
+          <h3 class="text-2xl md:text-4xl font-bold text-slate-900 mb-6">المرحلة الثالثة — المحتوى الذي
+يُقنع</h3>
+          <p class="text-gray-600 mb-8 text-lg">فيديو واحد يقول ما تعجز عنه ألف كلمة. المحتوى المرئي يحقق تفاعلاً أعلى
+بكثير من النصوص — نصنعه بإتقان يليق بعلامتك.</p>
+
+          <div class="flex justify-center items-center  " dir="rtl">
+  <div class="relative max-w-2xl w-full bg-white rounded-[2.5rem] p-8 md:p-12 border-8 border-white shadow-[0_20px_60px_-10px_rgba(6,51,160,0.1),0_10px_30px_-5px_rgba(0,0,0,0.05)]">
+    <div class="space-y-12">
+      <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-[#0633a0] rounded-2xl flex items-center justify-center shadow-lg shadow-blue-200 shrink-0">
+     <i class="fa-brands fa-youtube text-white text-3xl"></i>
+        </div>
+        <div class="flex-1 text-right">
+          <h3 class="text-xl md:text-2xl font-bold text-[#1e2a5e] mb-3">
+            الفيديوهات الإعلانية | Motion Graphics & AI Video
+          </h3>
+          <p class="text-gray-500 leading-relaxed text-lg">
+            موشن جرافيك احترافي، فيديوهات بالذكاء الاصطناعي، وإعلانات سوشيال تلتقط الانتباه في ثوانٍ.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+      
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-[#0633a0] rounded-2xl flex items-center justify-center shadow-lg shadow-blue-200 shrink-0">
+          <svg class="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+          </svg>
+        </div>
+          <div class="flex-1 text-right">
+          <h3 class="text-xl md:text-2xl font-bold text-[#1e2a5e] mb-3">
+            التعليق الصوتي | Voice Over
+          </h3>
+          <p class="text-gray-500 leading-relaxed text-lg">
+            الصوت هو روح المحتوى — أصوات بشرية احترافية بلهجات متعددة وتعليق بالذكاء الاصطناعي بجودة بث.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+        </div>
+      <div class="w-full lg:w-1/2">
+  <div class="relative rounded-[2rem] overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300 border border-gray-100">
+    <img src="img/360_3.png" alt="Strategy" class="w-full h-full object-cover aspect-video lg:aspect-auto">
+  </div>
+</div>
+
+      </div>
+      <!-- four -->
+             <div class="relative flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20">
+        <div class="w-full lg:w-1/2 text-center lg:text-right">
+          <span class="text-yellow-500 font-bold text-sm mb-3 block">المرحلة رابعة</span>
+          <h3 class="text-2xl md:text-4xl font-bold text-slate-900 mb-6">المرحلة الرابعة — الإدارة والنمو</h3>
+
+          <p class="text-gray-600 mb-8 text-lg">حضور رقمي بلا إدارة محترفة هو فرصة ضائعة يومياً. ندير حساباتك وحملاتك
+بذكاء تحليلي — كل ريال تنفقه يجب أن يعود بأكثر منه.</p>
+<div class="w-full space-y-8 py-12 px-1 " dir="rtl">
+  
+  <div class="bg-white rounded-[2.5rem] p-10  border border-gray-50 shadow-[0_15px_50px_-15px_rgba(0,0,0,0.05)] text-center lg:text-right  transition-transform hover:scale-[1.01] duration-300">
+    <h3 class="text-2xl md:text-3xl font-bold text-[#0633a0] mb-4">
+      إدارة السوشيال ميديا | Social Media Management
+    </h3>
+    <p class="text-gray-500 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+      خطة محتوى شهرية، جدولة ذكية، تفاعل مع الجمهور، وتقارير أداء مفصلة — كل شيء يُدار باحترافية.
+    </p>
+  </div>
+
+  <div class="bg-white rounded-[2.5rem] p-10 border border-gray-50 shadow-[0_15px_50px_-15px_rgba(0,0,0,0.05)] text-center transition-transform hover:scale-[1.01] duration-300">
+    <h3 class="text-2xl md:text-3xl font-bold text-[#0633a0] mb-4">
+      الحملات الإعلانية | Paid Advertising
+    </h3>
+    <p class="text-gray-500 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+      Meta, Google, TikTok, Snapchat — لا ميزانية تُهدر، لا جمهور خاطئ، فقط إعلانات تصل وتحوّل.
+    </p>
+  </div>
+
+</div>
+        </div>
+               <div class="w-full lg:w-1/2">
+          <div class="relative rounded-[2rem] overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+            <img src="img/360_4.png" alt="Digital Presence" class="w-full h-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class=" bg-white py-12 md:py-20" dir="rtl" style="font-family: 'Cairo', sans-serif;">
+  <div class=" mx-auto px-6 relative z-10">
+    <div class="relative bg-el-bg text-white p-12 md:p-20  shadow-2xl overflow-hidden animate-fade-in-up">
+      <div class="relative z-20 text-center space-y-8 flex flex-col items-center">
+        
+        <div class="space-y-4">
+          
+    <div class="bg-shape left-1"></div>
+    <div class="bg-shape left-2"></div>
+    <div class="bg-shape right-1"></div>
+    <div class="bg-shape right-2"></div>
+          <h2 class="text-3xl md:text-5xl font-black leading-tight">
+     هل أنت مستعد للنمو الحقيقي؟
+          </h2>
+          <p class="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+       ابدأ الآن مع TOP TECH ودعنا نبني لك منظومة رقمية تحقق نتائج حقيقية.   </p>
+        </div>
+
+        <button class="bg-white text-[#0057ff] px-10 py-4 rounded-xl font-black text-lg hover:scale-105 hover:shadow-2xl transition-all duration-300">
+          اطلب خدمة الآن
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer class="bg-white pt-16 pb-8 border-t border-gray-100" dir="rtl" style="font-family: 'Cairo', sans-serif;">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      
+      <div class="space-y-6">
+        <h3 class="text-3xl text-[#0633a0] font-bold">توب تك</h3>
+        <p class="text-gray-500 leading-relaxed text-sm md:text-base">
+          نساعد الشركات على النمو من خلال حلول تقنية وتسويقية متكاملة تجمع بين الاستراتيجية الذكية والتنفيذ الاحترافي.
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 text-[rgba(0,32,113,1)]  hover:bg-[#0057ff] hover:text-white transition-all shadow-sm">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 text-[rgba(0,32,113,1)]  hover:bg-[#0057ff] hover:text-white transition-all shadow-sm">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 text-[rgba(0,32,113,1)]  hover:bg-[#0057ff] hover:text-white transition-all shadow-sm">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 text-[rgba(0,32,113,1)]  hover:bg-[#0057ff] hover:text-white transition-all shadow-sm">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <h3 class="text-4xl text-[#0633a0] font-bold">روابط سريعة</h3>
+        <ul class="space-y-4">
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">الرئيسية</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">من نحن</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">خدماتنا</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">آراء عملائنا</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-6">
+        <h3 class="text-4xl text-[#0633a0] font-bold">خدماتنا</h3>
+        <ul class="space-y-4">
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">تصميم هويات</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">برمجة مواقع</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">تطوير تطبيقات</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">تحسين محركات البحث</a></li>
+          <li><a href="#" class="text-gray-500 hover:text-[#0057ff] hover:pr-2 transition-all">الحملات الإعلانية</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-6">
+        <h3 class="text-4xl text-[#0633a0] font-bold">معلومات التواصل</h3>
+        <ul class="space-y-5">
+          <li class="flex items-start gap-7">
+            <span class="text-[rgba(0,32,113,1)] mt-1"><i class="fas fa-envelope"></i></span>
+            <span class="text-gray-500 break-all">Toptechdz98@gmail.com</span>
+          </li>
+          <li class="flex items-center gap-7">
+            <span class="text-[rgba(0,32,113,1)] "><i class="fas fa-phone-alt"></i></span>
+            <span class="text-gray-500" dir="ltr">+213794559377</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+  
+<section class="w-full px-6 py-8 border-t bg-slate-50/50 border-gray-200">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+        
+        <p class="text-gray-500 text-sm">
+            © 2024 توب تك. جميع الحقوق محفوظة.
+        </p>
+
+        <p class="text-gray-500 text-sm">
+            تصميم وتطوير بواسطة <span class="text-gray-900 font-bold">توب تك</span>
+        </p>
+        
+    </div>
+</section>
+</footer>
+
+<script>
+  const btn = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
